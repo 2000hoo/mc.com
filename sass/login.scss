@@ -1,0 +1,280 @@
+.x-fll {
+    float: left;
+}
+.x-flr {
+    float: right;
+}
+
+.Login {
+    background: url("https://s1.miniso.cn/bsimg/ec/public/images/c6/b6/c6b6ec842c59335e77d9930bf53daf79.jpg?x-oss-process=style/high") center center no-repeat;
+    height: 580px;
+    display: flex;
+    align-items: center;
+
+    .board {
+        width: 387px;
+        height: 461px;
+        box-sizing: border-box;
+        padding: 60px 40px 17px;
+        background-color: #fff;
+        position: relative;
+        float: right;
+        
+        p {
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 28px;
+        }
+
+        .input {
+            width: 307px;
+            position: relative;
+            padding-bottom: 12px;
+            
+            .Licon {
+                width: 30px;
+                height: 27px;
+                border-right: 1px solid #ddd;
+                position: absolute;
+                top: 5px;
+                left: 0;
+            }
+            .phone {
+                background: url("../images/phone.png") center center no-repeat;
+            }
+            .lock {
+                background: url("../images/lock.png") center center no-repeat;
+            }
+            input {
+                padding-left: 42px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 36px;
+                font-size: 14px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+            }
+            .err-msg {
+                height: 31px;
+                color: #d9232e;
+                text-align: left;
+            }
+        }
+
+        .vcode {
+            
+            input {
+                padding-left: 8px;
+                vertical-align: middle;
+            } 
+            .codeArea {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 98px;
+                height: 36px;
+                border-radius: 3px;
+                overflow: hidden;
+                background-color: #e7e7e7;
+                vertical-align: middle;
+                
+                img {
+                    width: 98px;
+                    height: 36px;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+        .submitBtn {
+            width: 100%;
+            height: 49px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            letter-spacing: 5px;
+            background-color: #d9232e;
+            color: #fff;
+            font-weight: 400;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .etc {
+            padding-bottom: 30px;
+            
+            a {
+                color: #999;
+            }
+
+        }
+        .loginBar {
+            text-align: center;
+            background: url(../images/loginBar.png) center 0 no-repeat;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 20px;
+
+            > div {
+                padding: 26px 0 0;
+                cursor: pointer;
+                display: inline-block;
+                padding-left: 10px;
+                height: 19px;
+
+                a {
+                    color: #999;
+                    display: inline-block;
+                    
+                    img {
+                        vertical-align: middle;
+                    }
+                    span {
+                        color: #666;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.Register {
+    height: 363px;
+    background-color: #fff!important;
+    padding: 110px 0;
+
+    .imgBoard {
+        width: 640px;
+        display: inline-block;
+        
+        img {
+            box-shadow: 3px 3px 5px rgba(178,178,178,.3);
+            width: 583px;
+            height: 360px;
+            vertical-align: middle;
+        }
+    }
+    .signInBoard {
+        width: 380px;
+        padding-left: 50px;
+        display: inline-block;
+        border-left: 1px solid #eee;
+        position: relative;
+
+        p {
+            padding-bottom: 27px;
+            font-size: 18px;
+        }
+        .input {
+            padding-bottom: 12px;
+            width: 380px;
+            position: relative;
+            
+            input {
+                box-sizing: border-box;
+                padding-left: 9px;
+                width: 380px;
+                height: 36px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                color: #999;
+            }
+            .x-codeArea{
+                display: inline-block;
+
+                img {
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .err-msg {
+                height: 31px;
+                color: #d9232e;
+                text-align: left;
+            }
+        }
+        .obtain {
+            input {
+                font-size: 14px;
+            }
+            button {
+                width: 107px;
+                height: 34px;
+                font-size: 14px;
+                border-radius: 0 3px 3px 0;
+                position: absolute;
+                top: 1px;
+                right: 1px;
+                background-color: #d9232e!important;
+                color: #fff;
+                font-weight: 400;
+                cursor: pointer;
+            }
+        }
+        .vcode {
+            .codeArea {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 98px;
+                height: 36px;
+                border-radius: 3px;
+                overflow: hidden;
+                background-color: #e7e7e7;
+                vertical-align: middle;
+                
+                img {
+                    width: 98px;
+                    height: 36px;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+        .agree {
+            user-select: none;
+            padding-bottom: 17px;
+
+            .checkbox {
+                display: inline-block;
+                vertical-align: text-bottom;
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                background: url(../images/checkbox.png) center center no-repeat;
+            }
+            .checkboxC {
+                background-image: url(../images/checkbox_c.png);
+            }
+            span {
+                padding-left: 8px;
+                vertical-align: text-bottom;
+                display: inline-block;
+            }
+            a {
+                vertical-align: text-bottom;
+                color: #69c;
+                display: inline-block;
+
+            }
+        }
+        .loginBtn {
+            width: 380px;
+            height: 48px;
+            font-size: 18px;
+            background-color: #d9232e;
+            color: #fff;
+            font-weight: 400;
+            cursor: pointer;
+            border-radius: 3px;
+
+        }
+    }
+}
+
+.hide {
+    display: none;
+} 

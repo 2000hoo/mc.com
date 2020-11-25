@@ -1,0 +1,287 @@
+.whiteBox {
+  background-color: #fff;
+  padding: 110px 0 60px;
+}
+.whiteBox .tipBar {
+  line-height: 45px;
+  border: 1px solid #ddd;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.whiteBox .tipBar div {
+  vertical-align: middle;
+}
+.whiteBox .tipBar .x-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../images/checkbox.png) center center no-repeat;
+}
+.whiteBox .tipBar .x-checkboxC {
+  background-image: url(../images/checkbox_c.png);
+}
+.whiteBox .tipBar p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.whiteBox .tipBar .selectAll {
+  padding: 0 385px 0 10px;
+}
+.whiteBox .tipBar .quantity {
+  padding: 0 164px 0 121px;
+}
+.whiteBox .x-row {
+  background-color: #f4f4f4;
+}
+.whiteBox .cart_list ul {
+  display: inline-block;
+}
+.whiteBox .cart_list .cartList {
+  padding: 0 30px;
+  border: 1px solid #e8e8e8;
+  width: 1030px;
+  margin-top: 10px;
+}
+.whiteBox .cart_list .cartList li {
+  padding: 30px 0;
+  float: none;
+  border-bottom: 1px solid #eee;
+}
+.whiteBox .cart_list .cartList li .x-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../images/checkbox.png) center center no-repeat;
+  margin-right: 30px;
+}
+.whiteBox .cart_list .cartList li .x-checkboxC {
+  background-image: url(../images/checkbox_c.png);
+}
+.whiteBox .cart_list .cartList li .imgbox {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #eee;
+  position: relative;
+}
+.whiteBox .cart_list .cartList li .imgbox a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.whiteBox .cart_list .cartList li .imgbox a img {
+  vertical-align: middle;
+  height: 100%;
+}
+.whiteBox .cart_list .cartList li .data {
+  display: inline-block;
+  padding-left: 48px;
+  vertical-align: middle;
+}
+.whiteBox .cart_list .cartList li .data a {
+  width: 180px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+}
+.whiteBox .cart_list .cartList li .price {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 188px;
+}
+.whiteBox .cart_list .cartList li .price p {
+  font-size: 14px;
+}
+.whiteBox .cart_list .cartList li .count {
+  vertical-align: middle;
+  display: inline-block;
+}
+.whiteBox .cart_list .cartList li .count span {
+  font-size: 14px;
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.whiteBox .cart_list .cartList li .count .reduce {
+  background: url(../images/reduceDisable.png) center center no-repeat;
+}
+.whiteBox .cart_list .cartList li .count input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 50px;
+  height: 27px;
+  margin: 0 -1px;
+  text-align: center;
+  border-radius: 0;
+}
+.whiteBox .cart_list .cartList li .count .plus {
+  background: url(../images/plus.png) center center no-repeat;
+}
+.whiteBox .cart_list .cartList li .subtotal {
+  display: inline-block;
+  width: 274px;
+  text-align: center;
+  vertical-align: middle;
+  color: #d9232e;
+  font-size: 14px;
+}
+.whiteBox .cart_list .cartList li .del {
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url(../images/del.png) center center no-repeat;
+  vertical-align: middle;
+}
+.whiteBox .cart_list .cartList li:last-child {
+  border: none;
+}
+.whiteBox .x-floor .settle {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 65px;
+  line-height: 65px;
+  margin-top: 19px;
+  border: 1px solid #ddd;
+  position: relative;
+  padding-left: 30px;
+  z-index: 20;
+}
+.whiteBox .x-floor .settle .x-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../images/checkbox.png) center center no-repeat;
+  margin-right: 30px;
+}
+.whiteBox .x-floor .settle .x-checkboxC {
+  background-image: url(../images/checkbox_c.png);
+}
+.whiteBox .x-floor .settle p, .whiteBox .x-floor .settle a {
+  display: inline-block;
+}
+.whiteBox .x-floor .settle .onSelected {
+  padding-left: 29px;
+}
+.whiteBox .x-floor .settle .onSelected span {
+  display: inline-block;
+  width: 17px;
+  border: none;
+  background: 0 0;
+  text-align: center;
+  padding-bottom: 1px;
+}
+.whiteBox .x-floor .settle .delAll {
+  padding-left: 39px;
+}
+.whiteBox .x-floor .settle .clear {
+  padding-left: 20px;
+}
+.whiteBox .x-floor .settle button {
+  cursor: pointer;
+  width: 141px;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 0;
+  float: right;
+}
+.whiteBox .x-floor .settle .x-redBtn {
+  background-color: #d9232e !important;
+  color: #fff;
+  font-weight: 400;
+}
+.whiteBox .x-floor .settle .detail {
+  float: right;
+  text-align: right;
+  padding-right: 30px;
+  line-height: 18px;
+}
+.whiteBox .x-floor .settle .detail .x-gray {
+  color: #999 !important;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+.whiteBox .x-floor .settle .detail .x-gray span {
+  color: #999;
+  display: inline-block;
+  padding-right: 6px;
+}
+.whiteBox .x-floor .settle .detail .x-gray img {
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 4px;
+}
+.whiteBox .x-floor .settle .detail span {
+  display: inline-block;
+}
+.whiteBox .x-floor .settle .detail h1 {
+  font-weight: 100;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  padding-top: 11px;
+}
+.whiteBox .x-floor .settle .detail .x-red {
+  color: #d9232e !important;
+}
+.whiteBox .x-floor .settle .detail div a {
+  display: inline-block;
+  padding-top: 3px;
+  color: #d9232e;
+}
+.whiteBox .x-rowBar {
+  border: 1px solid #e8e8e8;
+  margin-bottom: 18px;
+  width: 1088px;
+  height: 502px;
+  background: url(../images/shopping_cart_no.png) 425px 98px no-repeat;
+}
+.whiteBox .x-rowBar p {
+  padding-top: 282px;
+  text-align: center;
+  font-size: 16px;
+}
+.whiteBox .x-rowBar .btnBar {
+  padding-top: 30px;
+  text-align: center;
+}
+.whiteBox .x-rowBar .btnBar button {
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #d9232e !important;
+  color: #fff;
+  font-weight: 400;
+  width: 144px;
+  height: 42px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=cart.css.map */

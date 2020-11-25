@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名创优品官方商城</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"> -->
+</head>
+<body>
+<div class="header">
+    <!-- 顶部黑框框 -->
+    <div class="headerTop">
+        <div class="main">
+            <div class="topLeft">
+                <span>名创优品 - 爱生活 爱miniso</span>
+            </div>
+            <div class="topRight">
+                <div class="login">
+                    <ul>    
+                        <li>
+                            <a href="login.html">登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="userBoard">
+                    <ul>
+                        <li class="username">你好</li>
+                        <li>
+                            <a href="#">退出登录</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="topOther">
+                    <li>
+                        <a href="/member-orders.html" target="_blank">订单管理</a>
+                    </li>
+                    <li>
+                        <a href="https://web.jiaxincloud.com/onekey.html?id=zzgxbtd3m2j0bg&appName=mcyp678&appChannel=20008" target="_blank">在线客服</a>
+                    </li>
+                    <li>
+                        <a href="/article-index_question-i-13.html" target="_blank">帮助中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerBottom">
+        <div class="main">
+            <div class="rel">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="https://s1.miniso.cn/bsimg/ec/public/images/2a/19/2a1937b510d45ab1c1a2d6e9e811e043.png" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                    <form action="/search-result.html" method="post">
+                        <button class="searchBtn"></button>
+                        <input  type="text" name="search_keywords" placeholder="输入关键词寻找宝贝" value="" autocomplete="off" >
+                    </form>
+                    <div class="searchBoard">
+                        <div class="recommend">
+                            <h1 class="gray">大家都在搜索</h1>
+                            <ul>
+                                <li >
+                                    <a href="/gallery.html?is_search=1&scontent=n,西餐套装">西餐套装</a>
+                                </li>
+                                <li >
+                                    <a href="/gallery.html?is_search=1&scontent=n,小夜灯">小夜灯</a>
+                                </li>
+                                <li >
+                                    <a href="/gallery.html?is_search=1&scontent=n,多功能便携风扇">多功能便携风扇</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- 百度的搜索引擎 -->
+                <script>
+                    const inp = document.querySelector('.search input')
+                    const ul = document.querySelector('.search .searchBoard ul')
+                    const uldiv = document.querySelector('.search .searchBoard')
+                
+                    // 1. 绑定事件
+                    inp.addEventListener('input', function () {
+                      // 拿到用户输入的内容
+                      // console.log(this.value)
+                
+                      // 2. 创建一个 script 标签
+                      const str = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=32646,1446,32532,32327,32351,32046,32115,31321,32618,32503,22159&wd=' + this.value + '&req=2&bs=%E7%88%B1%E5%A5%87%E8%89%BA&csor=6&cb=fn&_=1598517558259'
+                      const script = document.createElement('script')
+                      script.src = str
+                      document.body.appendChild(script)
+                      script.remove()
+                    })
+                
+                    function fn(res) {
+                      // console.log(res)
+                      // 渲染页面
+                
+                      if (!res.g) {
+                        ul.style.display = 'none'
+                        return
+                      }
+                
+                      // 来到这里表示有数据
+                      let str = ''
+                      res.g.forEach(item => {
+                        str += `
+                          <li>${ item.q }</li>
+                        `
+                      })
+                      ul.innerHTML = str
+                      uldiv.style.display = 'block'
+                    }
+                </script>
+                </div>
+                <div class="cart" onclick="(function (){location.href='/cart.html';})()">
+                    <div class="news">0</div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="floor">
+                    <ul class="navMenu">
+                        <!-- 已渲染出来 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- <div class="banner c-hide">
+    <div class="banner-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-visible swiper-slide-active">
+                <a href="/topic-detail-18.html" style="background-image: url('https://s1.miniso.cn/bsimg/ec/public/images/5a/ae/5aaea8de41523b9ea6c7b2eb3dc23929.jpg');"></a>
+            </div>
+        </div>
+        <div class="swiper-pagination">
+            <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
+        </div>
+    </div>
+</div> -->
+
+<div class="banner-x">
+    <ul class="imgBox">
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+        <li>
+            <img src="https://s1.miniso.cn/bsimg/ec/public/images/6e/97/6e97d8d0ce5f0f0c352a896f21da5150.jpg?x-oss-process=style/high" alt="">
+        </li>
+    </ul>
+    <ol></ol>
+</div>
+<script>
+
+    // 1. 获取元素
+    // 1-1. 获取 imgBox 元素
+    const imgBox = document.querySelector('.banner-x > ul')
+    // 1-2. 获取焦点盒子 元素
+    const pointBox = document.querySelector('.banner-x > ol')
+    // 1-3. 获取 banner 区域的盒子
+    const banner = document.querySelector('.banner-x')
+
+    // 2. 准备变量
+    // 2-1. 准备一个变量记录索引
+    let index = 0
+    // 2-2. 准备一个变量记录定时器返回值
+    let timer = 0
+
+    // 3. 生成焦点
+    setPoint()
+    function setPoint() {
+      const num = imgBox.children.length
+      const frg = document.createDocumentFragment()
+      for (let i = 0; i < num; i++) {
+        const li = document.createElement('li')
+        li.classList.add('point')
+        li.dataset.point = i
+        if (i === 0) li.classList.add('active')
+        frg.appendChild(li)
+      }
+      pointBox.appendChild(frg)
+      pointBox.style.width = num * 35 + 'px'
+      pointBox.style.marginLeft = -pointBox.offsetWidth / 2 + 'px'
+    }
+
+    // 4-1. 切换一张
+    function changeOne(type) {
+      // type 参数决定
+      //  传递 true 就是切换下一张
+      //  传递 false 就是切换上一张
+      //  传递 数字, 就是切换到某一张
+      // 目前是切换之前, index 是当前显示的这一张
+      // 我只要让当前显示这一张隐藏, 就等于所有的都隐藏了
+      imgBox.children[index].classList.remove('active')
+      pointBox.children[index].classList.remove('active')
+
+      // 再去执行 index++
+      if (type === true) {
+        index++
+      } else if (type === false) {
+        index--
+      } else {
+        index = type
+      }
+
+      // 判断 index 的边界值
+      if (index >= imgBox.children.length) {
+        index = 0
+      }
+
+      // 判断 index 的边界值
+      if (index < 0) {
+        index = imgBox.children.length - 1
+      }
+
+      // 当 index++ 以后, index 已经表示下一张的索引
+      // 依旧是让 第 index 张添加类名
+      imgBox.children[index].classList.add('active')
+      pointBox.children[index].classList.add('active')
+
+    }
+
+    // 4-2. 准备定时器
+    autoPlay()
+    function autoPlay() {
+      timer = setInterval(() => {
+        changeOne(true)
+      }, 1500)
+    }
+
+    // 5. 移入移出
+    overOut()
+    function overOut() {
+      banner.addEventListener('mouseover', () => clearInterval(timer))
+      banner.addEventListener('mouseout', () => autoPlay())
+    }
+
+    // 6. 绑定事件
+    bindEvent()
+    function bindEvent() {
+      banner.addEventListener('click', e => {
+        e = e || window.event
+        const target = e.target || e.srcElement
+
+        // 判断左按钮
+        if (target.className === 'left') {
+          changeOne(false)
+        }
+
+        // 判断右按钮
+        if (target.className === 'right') {
+          changeOne(true)
+        }
+
+        // 判断焦点
+        if (target.className === 'point') {
+          // 咋办
+          // 拿到自己身上的索引
+          const pointIndex = target.dataset.point - 0
+          changeOne(pointIndex)
+        }
+      })
+    }
+
+    // 7. 切换标签页
+    changeTab()
+    function changeTab() {
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          clearInterval(timer)
+        } else if (document.visibilityState === 'visible') {
+          autoPlay()
+        }
+      })
+    }
+  </script>
+
+<div class="floorNew">
+    <div class="whiteBoard x-space60">
+        <div class="main">
+            <div class="channelTitle">
+                <h1>新品首发</h1>   
+                <span>每周上新，特惠不停</span>
+            </div>
+        </div>
+        <div class="swiper-container product-container main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide x-itemCenter swiper-slide-visible swiper-slide-active">
+                    <div class="itemList clearfix">
+                        <!-- 已渲染出来 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="floorHot x-row x-space60">
+	<div class="main clearfix">
+		<div class="x-channelTitle">
+			<h1>人气推荐</h1>
+		</div>
+		<div class="itemList popularity">
+			<!-- 已渲染出来 -->
+        </div>
+    </div>
+</div>
+
+<div class="whiteBoard  px60T">
+	<div class="main clearfix">
+        <!-- 已渲染出来 -->
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footerTop">
+        <div class="main">
+            <ul>
+                <li>
+                    <h1>服务热线</h1>
+                    <h2>400-9965-022</h2>
+                    <span>9:00 - 21:00</span>
+                </li>
+                <li class="middle">
+                    <h1>名创优品品牌宣言</h1>
+                    <p>
+                        名创优品旗下电商品牌，从名创优品2000家线下旗舰店筛选最优质的产品，秉承从选料，设计，生产，检测都严苛把控，只为把优质的商品送到你面前。
+                    </p>
+                </li>
+                <li>
+                    <h1>扫码关注公众号</h1>
+                    <img src="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/be/aa/beaabf69fb119656ab7c1a03406c62ad.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="main">
+            <ul class="borderB">
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon1.png" alt="">
+                    <span>名创优品质量保障</span>
+                </li>
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon2.png" alt="">
+                    <span>全场满79元包邮</span>
+                </li>
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon3.png" alt="">
+                    <span>30天无理由退换</span>
+                </li>
+            </ul>
+            <ul class="link"> 
+                <li> 
+                    <a href="/article-index_question-i-13.html">常见问题</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_aftersale-i-15.html">售后服务</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_acceptance-i-14.html">配送与验收</a>
+                </li> 
+                <li> 
+                    <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014179&amp;chatId=bf7d6f0c-c04c-4bd2-9335-c87fcdbe5598">联系客服</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_privacy-i-25.html">隐私政策</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_service-i-24.html">服务协议</a> 
+                </li> 
+                <li> 
+                    <a href="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/f2/14/f2143f051bbf3c75bf5e0c426c55362f.jpg" target="_blank">营业执照</a> 
+                </li>
+                    <li>
+                    <a href="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/e5/b1/e5b1966638d3a2febfa34559b70ea8c5.jpg" target="_blank">食品经营许可证</a> 
+                </li> 
+            </ul>
+            <p> © 2019-2020 MINISO    备案号：粤ICP备15008399号-3</p>
+        </div>
+    </div>
+</div>
+
+<ol class="lou_nav">
+</ol>
+
+<!-- 二级导航渲染 -->
+    <script src="./jquery/jquery.min.js"></script>
+    <!-- 楼层导航盒子有个bug 只有点击盒子过后才能跟随对应的页面盒子移动 -->
+    <script>
+
+        $('.lou_nav').on('click', 'li', function () {
+            // 拿到你点击得是第几个 li
+            const index = $(this).index()
+            // console.log(index)
+            // 让页面回到顶部
+            if (index === 0 ){
+                $('html').animate({
+                    scrollTop: 0
+                }, 1000)
+            }else{
+                const loucengLi = $('.whiteBoard  .x-pb60').eq(index - 1)
+                // 获取到对应 楼层 盒子到页面顶部得距离
+                const topSize = loucengLi.offset().top - 80
+                // 拿到得值是多少, 就让浏览器滚动到多少
+                $('html').stop().animate({
+                    scrollTop: topSize
+                }, 1000)
+            }
+
+            $(window).on('scroll', function () {
+            // 拿到浏览器卷去得高度
+                const topSize = document.documentElement.scrollTop || document.body.scrollTop
+
+            // 拿到你现在到几楼了
+                let lou = 0
+
+                // 循环遍历所有楼层盒子
+                ;[...$('.whiteBoard  .x-pb60')].forEach((item, index) => {
+                    if ($(item).offset().top - 81 <= topSize) {
+                        lou = index + 1
+                    }
+                })
+
+            // 设置对应导航盒子得类名
+                $('.lou_nav > li').removeClass('active').eq(lou).addClass('active')
+            })
+        })
+
+    </script>
+    <script src="./lib/utils.js"></script>
+    <script src="./js/navlist.js"></script>
+    <script src="./js/indexlist.js"></script>
+    <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
+</body>
+</html>

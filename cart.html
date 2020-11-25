@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名创优品官方商城</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <div class="header">
+        <!-- 顶部黑框框 -->
+        <div class="headerTop">
+            <div class="main">
+                <div class="topLeft">
+                    <span>名创优品 - 爱生活 爱miniso</span>
+                </div>
+                <div class="topRight">
+                    <div class="login">
+                        <ul>    
+                            <li>
+                                <a href="login.html">登录</a>
+                            </li>
+                            <li>
+                                <a href="register.html">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 尚未做样式 -->
+                    <div class="userBoard">
+                        <div class="vip"></div>
+                        <div class="userID">
+                            <span id="topNickname" onclick="location.href='/member.html'"></span>
+                            <div class="more">
+                                <a href="javascript:;">
+                                    <div class="userGuide">
+                                        <ul class="center" id="topUCenterMenu">
+                                            <li class="active"onclick="(function (){location.href='/member-index.html';})()">个人信息</li>
+                                            <li onclick="(function (){location.href='/member-orders.html';})()">订单管理</li>
+                                            <li onclick="(function (){location.href='/member-receiver.html';})()">地址管理</li>
+                                            <li onclick="(function (){location.href='/member-coupon.html';})()">优惠管理</li>
+                                            <li onclick="(function (){location.href='/member-favorite.html';})()">收藏夹</li>
+                                            <li onclick="(function (){location.href='/passport-logout.html';})()">退出登录</li>
+                                        </ul>
+                                        <div class="bottom"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="topOther">
+                        <li>
+                            <a href="/member-orders.html" target="_blank">订单管理</a>
+                        </li>
+                        <li>
+                            <a href="https://web.jiaxincloud.com/onekey.html?id=zzgxbtd3m2j0bg&appName=mcyp678&appChannel=20008" target="_blank">在线客服</a>
+                        </li>
+                        <li>
+                            <a href="/article-index_question-i-13.html" target="_blank">帮助中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="headerBottom">
+            <div class="main">
+                <div class="rel">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <img src="https://s1.miniso.cn/bsimg/ec/public/images/2a/19/2a1937b510d45ab1c1a2d6e9e811e043.png" alt="">
+                        </a>
+                    </div>
+                    <div class="search">
+                        <form action="/search-result.html" method="post">
+                            <button class="searchBtn"></button>
+                            <input  type="text" name="search_keywords" placeholder="输入关键词寻找宝贝" value="" autocomplete="off" >
+                        </form>
+                        <div class="searchBoard">
+                            <div class="recommend">
+                                <h1 class="gray">大家都在搜索</h1>
+                                <ul>
+                                    <li >
+                                        <a href="/gallery.html?is_search=1&scontent=n,西餐套装">西餐套装</a>
+                                    </li>
+                                    <li >
+                                        <a href="/gallery.html?is_search=1&scontent=n,小夜灯">小夜灯</a>
+                                    </li>
+                                    <li >
+                                        <a href="/gallery.html?is_search=1&scontent=n,多功能便携风扇">多功能便携风扇</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- 百度的搜索引擎 -->
+                    <script>
+                        const inp = document.querySelector('.search input')
+                        const ul = document.querySelector('.search .searchBoard ul')
+                        const uldiv = document.querySelector('.search .searchBoard')
+                    
+                        // 1. 绑定事件
+                        inp.addEventListener('input', function () {
+                          // 拿到用户输入的内容
+                          // console.log(this.value)
+                    
+                          // 2. 创建一个 script 标签
+                          const str = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=32646,1446,32532,32327,32351,32046,32115,31321,32618,32503,22159&wd=' + this.value + '&req=2&bs=%E7%88%B1%E5%A5%87%E8%89%BA&csor=6&cb=fn&_=1598517558259'
+                          const script = document.createElement('script')
+                          script.src = str
+                          document.body.appendChild(script)
+                          script.remove()
+                        })
+                    
+                        function fn(res) {
+                          // console.log(res)
+                          // 渲染页面
+                    
+                          if (!res.g) {
+                            ul.style.display = 'none'
+                            return
+                          }
+                    
+                          // 来到这里表示有数据
+                          let str = ''
+                          res.g.forEach(item => {
+                            str += `
+                              <li>${ item.q }</li>
+                            `
+                          })
+                          ul.innerHTML = str
+                          uldiv.style.display = 'block'
+                        }
+                    </script>
+                    </div>
+                    <div class="cart" onclick="(function (){location.href='/cart.html';})()">
+                        <div class="news">0</div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="floor">
+                        <ul class="navMenu">
+                            <!-- 已渲染出来 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<div class="whiteBox">
+    <div class="main">
+    
+    </div>
+</div>
+
+<script src="./lib/template-web.js"></script>
+<script id="tmp" type="text/html">
+    {{ if list.length }}
+        <div class="x-row tipBar">
+            <div class="x-checkbox chooseAll {{ selectAll && list.length && 'x-checkboxC'}}" id="select-all"></div>
+            <p class="selectAll">全选</p>
+            <p>单价</p>
+            <p class="quantity">数量</p>
+            <p>小计</p>
+        </div>
+        <div class="cart_list">
+            <ul class="cartList">
+                {{ each list v }}
+                <li>
+                    <div data-id="{{ v.id }}" id="select-item" class="p_onSale item-checkbox x-checkbox {{ v.isSelect && 'x-checkboxC'}}" ></div>
+                    <div class="imgbox">
+                        <a href="/product.html?goodsId={{ v.id}}" target="_blank">
+                            <img src="{{ v.url }}" alt="{{ v.title }}">
+                        </a>
+                    </div>
+                    <div class="data goods_detail">
+                        <a href="/product.html?goodsId={{ v.id}}" class="goods_name" target="_blank">{{ v.title }}</a>
+                    </div>
+                    <div class="price">
+                        <!--<p class="x-del"></p> 赠品才需要 -->
+                        <p>{{ v.price }}</p>
+                    </div>
+                    <div class="count" >
+                        <span class="reduce" data-id="{{ v.id }}"></span>
+                        <input type="text" value="{{ v.cart_num }}" class="item_count">
+                        <input type="hidden" >
+                        <span class="plus" data-id="{{ v.id }}"></span>
+                    </div>
+                    <span class="subtotal x-red">¥ {{(v.price * v.cart_num).toFixed(2)}}</span>
+                    <!-- TODO 这里的精度，似乎已经固定两位 -->
+                    <div data-id="{{ v.id }}" class="del"></div>
+                    <!-- 商品促销赠品部分 开始 TODO 目前不做商品促销 -->
+                </li>
+                {{ /each }}
+            </ul>
+        </div>
+        <div class="x-floor">
+            <div class="x-row main settle">
+                <div class="x-checkbox chooseAll {{ selectAll && 'x-checkboxC'}}"  id="select-all"></div>
+                <p class="onSelected">已选<span>({{ total }})</span></p>  
+                <a class="delAll" href="index.html">继续购物</a>
+                <a class="clear" href="#" >清空购物车</a>
+                <button class="settleBtn x-redBtn pay" id="checkout">下单结算</button>
+                <div class="detail">
+                    <p class="x-gray">
+                        商品合计：<span id="cartTotalPrice">¥ {{ totalPrice.toFixed(2) }}</span>
+                        订单优惠：<span id="cartDiscount">¥0</span>
+                        <img src="./images/explanation3.png" class="js-couponTip">
+                    </p>
+                    <span>应付总额：</span>
+                    <h1 class="x-red" id="cartPayCount">¥ {{ totalPrice.toFixed(2) }}</h1>
+                    <div>
+                        <a href="/cart-fororder.html?rule_id=99999" id="shipping_fee_tip">
+                            本单享受免邮
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ else }}
+        <div class="x-emptyCart" style="height: auto;">
+            <div class="x-rowBar">
+                <p>购物车空空的</p>
+                <div class="btnBar">
+                    <button class="x-redBtn" onclick="location.href='/index.html'">去购买</button>
+                </div>
+            </div>
+        </div>
+    {{ /if }}
+</script>
+<script src="./js/cart.js"></script>
+
+<div class="footer">
+    <div class="footerTop">
+        <div class="main">
+            <ul>
+                <li>
+                    <h1>服务热线</h1>
+                    <h2>400-9965-022</h2>
+                    <span>9:00 - 21:00</span>
+                </li>
+                <li class="middle">
+                    <h1>名创优品品牌宣言</h1>
+                    <p>
+                        名创优品旗下电商品牌，从名创优品2000家线下旗舰店筛选最优质的产品，秉承从选料，设计，生产，检测都严苛把控，只为把优质的商品送到你面前。
+                    </p>
+                </li>
+                <li>
+                    <h1>扫码关注公众号</h1>
+                    <img src="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/be/aa/beaabf69fb119656ab7c1a03406c62ad.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="main">
+            <ul class="borderB">
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon1.png" alt="">
+                    <span>名创优品质量保障</span>
+                </li>
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon2.png" alt="">
+                    <span>全场满79元包邮</span>
+                </li>
+                <li> 
+                    <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon3.png" alt="">
+                    <span>30天无理由退换</span>
+                </li>
+            </ul>
+            <ul class="link"> 
+                <li> 
+                    <a href="/article-index_question-i-13.html">常见问题</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_aftersale-i-15.html">售后服务</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_acceptance-i-14.html">配送与验收</a>
+                </li> 
+                <li> 
+                    <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014179&amp;chatId=bf7d6f0c-c04c-4bd2-9335-c87fcdbe5598">联系客服</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_privacy-i-25.html">隐私政策</a> 
+                </li> 
+                <li> 
+                    <a href="/article-index_service-i-24.html">服务协议</a> 
+                </li> 
+                <li> 
+                    <a href="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/f2/14/f2143f051bbf3c75bf5e0c426c55362f.jpg" target="_blank">营业执照</a> 
+                </li>
+                    <li>
+                    <a href="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/e5/b1/e5b1966638d3a2febfa34559b70ea8c5.jpg" target="_blank">食品经营许可证</a> 
+                </li> 
+            </ul>
+            <p> © 2019-2020 MINISO    备案号：粤ICP备15008399号-3</p>
+        </div>
+    </div>
+</div>
+
+<!-- 二级导航渲染 -->
+<script src="./lib/utils.js"></script>
+<script src="./js/navlist.js"></script>
+</body>
+</html>

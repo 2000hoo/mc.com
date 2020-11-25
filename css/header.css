@@ -1,0 +1,318 @@
+/* header */
+.header {
+  width: 100%;
+}
+.header .headerTop {
+  height: 26px;
+  padding-top: 5px;
+  background-color: #000;
+  color: #fff;
+}
+.header .headerTop a {
+  color: #ccc;
+}
+.header .headerTop a:hover {
+  color: #fff;
+}
+.header .headerTop .topLeft {
+  float: left;
+}
+.header .headerTop .topLeft span {
+  color: #ccc;
+}
+.header .headerTop .topRight {
+  float: right;
+}
+.header .headerTop .topRight div, .header .headerTop .topRight ul, .header .headerTop .topRight li {
+  float: left;
+}
+.header .headerTop .topRight .login li {
+  padding-right: 24px;
+}
+.header .headerTop .topRight .login li a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header .headerTop .topRight .userBoard li {
+  padding-right: 24px;
+}
+.header .headerTop .topRight .userBoard li a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header .headerTop .topRight .topOther {
+  margin-top: 3px;
+  display: inline-block;
+}
+.header .headerTop .topRight .topOther li {
+  height: 14px;
+  line-height: 14px;
+  padding: 0 14px;
+  float: left;
+  border-left: 1px solid #5c5c5c;
+}
+.header .headerBottom {
+  width: 100%;
+  padding: 20px 0 1px;
+}
+.header .headerBottom .rel {
+  position: relative;
+  text-align: center;
+}
+.header .headerBottom .rel .logo {
+  padding-top: 4px;
+}
+.header .headerBottom .rel .logo a {
+  display: inline-block;
+  width: 100px;
+}
+.header .headerBottom .rel .logo a img {
+  width: 100%;
+}
+.header .headerBottom .rel .search {
+  position: absolute;
+  top: 11px;
+  right: 61px;
+}
+.header .headerBottom .rel .search form {
+  position: relative;
+}
+.header .headerBottom .rel .search form .searchBtn {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(../images/search.png) center center no-repeat #fff;
+}
+.header .headerBottom .rel .search form input {
+  height: 34px;
+  width: 274px;
+  line-height: 34px;
+  border-radius: 30px;
+  padding-left: 37px;
+  color: #999;
+  font-weight: 200;
+  font-style: Arial;
+  border: 1px solid #ddd;
+}
+.header .headerBottom .rel .search .searchBoard {
+  width: 278px;
+  padding: 7px 17px;
+  background-color: #fff;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(178, 178, 178, 0.3);
+  display: none;
+}
+.header .headerBottom .rel .search .searchBoard .recommend {
+  padding-top: 14px;
+}
+.header .headerBottom .rel .search .searchBoard .recommend .gray {
+  color: #999;
+  font-weight: 100;
+}
+.header .headerBottom .rel .search .searchBoard .recommend li {
+  float: none;
+  padding: 8px 0 4px;
+  width: 240px;
+  overflow: hidden;
+}
+.header .headerBottom .rel .cart {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: url(../images/cart.png) 10px 0 no-repeat;
+}
+.header .headerBottom .rel .cart .news {
+  min-width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  padding: 0 2px;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d9232e;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.header .headerBottom .nav {
+  padding: 30px 0;
+  vertical-align: top;
+  text-align: center;
+}
+.header .headerBottom .nav .navMenu {
+  display: inline-block;
+  line-height: 20px;
+}
+.header .headerBottom .nav .navMenu li {
+  padding: 0 28px;
+  float: left;
+  box-sizing: border-box;
+}
+.header .headerBottom .nav .navMenu li a {
+  font-size: 14px;
+  padding-bottom: 9px;
+  line-height: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #fff;
+}
+.header .headerBottom .nav .navMenu li .secMenu {
+  padding-top: 34px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 193px;
+  left: 0;
+  box-shadow: 0 3px 3px rgba(178, 178, 178, 0.3);
+  overflow: hidden;
+  display: none;
+  z-index: 20;
+}
+.header .headerBottom .nav .navMenu li .secMenu .main {
+  clear: both;
+  padding-left: 14px;
+}
+.header .headerBottom .nav .navMenu li .secMenu .menuBox {
+  width: 108px;
+  padding: 0 18px 30px;
+  float: left;
+  text-align: center;
+}
+.header .headerBottom .nav .navMenu li .secMenu .menuBox .imgbox {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.header .headerBottom .nav .navMenu li .secMenu .menuBox .imgbox img {
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.header .headerBottom .nav .navMenu li.active .secMenu {
+  display: none;
+}
+.header .headerBottom .nav .navMenu li.active > a {
+  color: #d9232e;
+  border-bottom: 3px solid #d9232e;
+}
+.header .headerBottom .nav .navMenu li:hover > a {
+  color: #d9232e;
+  border-bottom: 3px solid #d9232e;
+}
+.header .headerBottom .nav .navMenu li:hover .secMenu {
+  display: block;
+}
+.header .headerBottom .nav .navMenu li.active:hover .secMenu {
+  display: none;
+}
+
+.menu-floor {
+  display: none;
+}
+
+.floorMenu {
+  display: none;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  border-top: 1px solid #e4e4e4;
+  text-align: center;
+}
+.footer .footerTop {
+  padding: 40px 0;
+  background-color: #fff;
+}
+.footer .footerTop ul {
+  display: inline-block;
+}
+.footer .footerTop ul li {
+  float: left;
+}
+.footer .footerTop ul li h1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+.footer .footerTop ul li h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 31px 0 22px;
+  font-weight: 100;
+}
+.footer .footerTop ul li span {
+  font-size: 14px;
+  display: inline-block;
+}
+.footer .footerTop ul li p {
+  margin-top: 28px;
+  width: 243px;
+  line-height: 25px;
+  text-align: left;
+  font-size: 14px;
+}
+.footer .footerTop ul li img {
+  margin-top: 22px;
+}
+.footer .footerTop ul li.middle {
+  height: 170px;
+  padding: 0 97px 0 91px;
+  margin: 0 91px 0 112px;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+.footer .footerBottom {
+  width: 100%;
+  height: 210px;
+  background-color: #414141;
+}
+.footer .footerBottom .borderB {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #5c5c5c;
+  padding-top: 40px;
+  display: inline-block;
+}
+.footer .footerBottom .borderB li {
+  width: 33.3%;
+  float: left;
+}
+.footer .footerBottom .borderB li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.footer .footerBottom .borderB li span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 55px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.footer .footerBottom .link {
+  padding-top: 20px;
+  display: inline-block;
+}
+.footer .footerBottom .link li {
+  padding-right: 16px;
+  float: left;
+}
+.footer .footerBottom .link li a {
+  color: #ccc;
+  vertical-align: middle;
+}
+.footer .footerBottom p {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=header.css.map */

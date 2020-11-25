@@ -1,0 +1,252 @@
+.x-fll {
+  float: left;
+}
+
+.x-flr {
+  float: right;
+}
+
+.Login {
+  background: url("https://s1.miniso.cn/bsimg/ec/public/images/c6/b6/c6b6ec842c59335e77d9930bf53daf79.jpg?x-oss-process=style/high") center center no-repeat;
+  height: 580px;
+  display: flex;
+  align-items: center;
+}
+.Login .board {
+  width: 387px;
+  height: 461px;
+  box-sizing: border-box;
+  padding: 60px 40px 17px;
+  background-color: #fff;
+  position: relative;
+  float: right;
+}
+.Login .board p {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 28px;
+}
+.Login .board .input {
+  width: 307px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.Login .board .input .Licon {
+  width: 30px;
+  height: 27px;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.Login .board .input .phone {
+  background: url("../images/phone.png") center center no-repeat;
+}
+.Login .board .input .lock {
+  background: url("../images/lock.png") center center no-repeat;
+}
+.Login .board .input input {
+  padding-left: 42px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.Login .board .input .err-msg {
+  height: 31px;
+  color: #d9232e;
+  text-align: left;
+}
+.Login .board .vcode input {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.Login .board .vcode .codeArea {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 98px;
+  height: 36px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  vertical-align: middle;
+}
+.Login .board .vcode .codeArea img {
+  width: 98px;
+  height: 36px;
+  vertical-align: middle;
+}
+.Login .board .submitBtn {
+  width: 100%;
+  height: 49px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  background-color: #d9232e;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.Login .board .etc {
+  padding-bottom: 30px;
+}
+.Login .board .etc a {
+  color: #999;
+}
+.Login .board .loginBar {
+  text-align: center;
+  background: url(../images/loginBar.png) center 0 no-repeat;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+}
+.Login .board .loginBar > div {
+  padding: 26px 0 0;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 10px;
+  height: 19px;
+}
+.Login .board .loginBar > div a {
+  color: #999;
+  display: inline-block;
+}
+.Login .board .loginBar > div a img {
+  vertical-align: middle;
+}
+.Login .board .loginBar > div a span {
+  color: #666;
+  vertical-align: middle;
+}
+
+.Register {
+  height: 363px;
+  background-color: #fff !important;
+  padding: 110px 0;
+}
+.Register .imgBoard {
+  width: 640px;
+  display: inline-block;
+}
+.Register .imgBoard img {
+  box-shadow: 3px 3px 5px rgba(178, 178, 178, 0.3);
+  width: 583px;
+  height: 360px;
+  vertical-align: middle;
+}
+.Register .signInBoard {
+  width: 380px;
+  padding-left: 50px;
+  display: inline-block;
+  border-left: 1px solid #eee;
+  position: relative;
+}
+.Register .signInBoard p {
+  padding-bottom: 27px;
+  font-size: 18px;
+}
+.Register .signInBoard .input {
+  padding-bottom: 12px;
+  width: 380px;
+  position: relative;
+}
+.Register .signInBoard .input input {
+  box-sizing: border-box;
+  padding-left: 9px;
+  width: 380px;
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #999;
+}
+.Register .signInBoard .input .x-codeArea {
+  display: inline-block;
+}
+.Register .signInBoard .input .x-codeArea img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.Register .signInBoard .input .err-msg {
+  height: 31px;
+  color: #d9232e;
+  text-align: left;
+}
+.Register .signInBoard .obtain input {
+  font-size: 14px;
+}
+.Register .signInBoard .obtain button {
+  width: 107px;
+  height: 34px;
+  font-size: 14px;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #d9232e !important;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.Register .signInBoard .vcode .codeArea {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 98px;
+  height: 36px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #e7e7e7;
+  vertical-align: middle;
+}
+.Register .signInBoard .vcode .codeArea img {
+  width: 98px;
+  height: 36px;
+  vertical-align: middle;
+}
+.Register .signInBoard .agree {
+  user-select: none;
+  padding-bottom: 17px;
+}
+.Register .signInBoard .agree .checkbox {
+  display: inline-block;
+  vertical-align: text-bottom;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../images/checkbox.png) center center no-repeat;
+}
+.Register .signInBoard .agree .checkboxC {
+  background-image: url(../images/checkbox_c.png);
+}
+.Register .signInBoard .agree span {
+  padding-left: 8px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+.Register .signInBoard .agree a {
+  vertical-align: text-bottom;
+  color: #69c;
+  display: inline-block;
+}
+.Register .signInBoard .loginBtn {
+  width: 380px;
+  height: 48px;
+  font-size: 18px;
+  background-color: #d9232e;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=login.css.map */

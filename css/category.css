@@ -1,0 +1,243 @@
+.page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page a, .page span {
+  display: inline-block;
+}
+.page a:last-child {
+  color: #999;
+}
+
+.cateBanner {
+  width: 1090px;
+  height: 310px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.cateBanner a {
+  display: inline-block;
+}
+.cateBanner a img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.keywords {
+  padding-top: 25px;
+  margin-bottom: 80px;
+}
+.keywords .x-tl {
+  text-align: left;
+}
+.keywords .category, .keywords .hoting, .keywords .sorting {
+  padding-bottom: 19px;
+}
+.keywords .category a, .keywords .hoting a, .keywords .sorting a {
+  margin-left: 28px;
+}
+.keywords .category span, .keywords .hoting span, .keywords .sorting span {
+  display: inline-block;
+  color: #999;
+}
+.keywords .category ul, .keywords .hoting ul, .keywords .sorting ul {
+  display: inline-block;
+}
+.keywords .category ul li, .keywords .hoting ul li, .keywords .sorting ul li {
+  float: left;
+}
+.keywords .category ul li a, .keywords .hoting ul li a, .keywords .sorting ul li a {
+  display: inline-block;
+}
+.keywords .category ul li:hover a, .keywords .category ul .active a, .keywords .hoting ul li:hover a, .keywords .hoting ul .active a, .keywords .sorting ul li:hover a, .keywords .sorting ul .active a {
+  color: #d9232e;
+}
+.keywords .category span, .keywords .category ul, .keywords .category a, .keywords .hoting span, .keywords .hoting ul, .keywords .hoting a, .keywords .sorting span, .keywords .sorting ul, .keywords .sorting a {
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: bottom;
+}
+.keywords .category, .keywords .hoting {
+  border-bottom: 1px dashed #eee;
+  margin-bottom: 14px;
+}
+.keywords .sorting {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+.keywords .listContent .x-pt83 {
+  padding-top: 40px;
+}
+.keywords .listContent .x-pt83:nth-child(1) {
+  padding-top: 0 !important;
+}
+.keywords .listContent .cateHeader .icon {
+  vertical-align: middle;
+  display: inline-block;
+}
+.keywords .listContent .cateHeader .icon img {
+  background-color: #fff;
+  vertical-align: middle;
+}
+.keywords .listContent .cateHeader h1 {
+  font-weight: 100;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 13px;
+}
+.keywords .listContent .cateHeader p {
+  padding: 15px 0 30px;
+}
+.keywords .listContent .itemList {
+  width: 1092px;
+  padding-top: 9px;
+}
+.keywords .listContent .itemList .item {
+  text-align: center;
+  width: 263px;
+  float: left;
+  margin-right: 10px;
+  height: 390px;
+}
+.keywords .listContent .itemList .item a {
+  display: inline-block;
+}
+.keywords .listContent .itemList .item .imgbox {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.keywords .listContent .itemList .item .imgbox {
+  text-align: center;
+  display: inline-block;
+  width: 263px;
+  height: 263px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  position: relative;
+}
+.keywords .listContent .itemList .item .imgbox img {
+  vertical-align: middle;
+  height: 100%;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+.keywords .listContent .itemList .item .imgbox .img_lazyloaded {
+  background: #FFF;
+}
+.keywords .listContent .itemList .item .imgbox .x-Ptag {
+  width: 20px;
+  position: absolute;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  top: 10px;
+  left: 16px;
+  border: 1px solid #C7A582;
+  color: #C7A582;
+  padding: 4px 1px 4px 2px;
+}
+.keywords .listContent .itemList .item .imgbox .leftTop {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  left: 0;
+  top: 0;
+}
+.keywords .listContent .itemList .item span {
+  font-size: 14px;
+  color: #d9232e;
+}
+.keywords .listContent .itemList .item .tagBox {
+  height: 20px;
+}
+.keywords .listContent .itemList .item .tagBox .tag {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 6px;
+  background-color: #C7A582;
+  margin: 0 auto;
+}
+.keywords .listContent .itemList .item a {
+  display: inline-block;
+}
+.keywords .listContent .itemList .item .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  width: 168px;
+  font-size: 14px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.keywords .listContent .itemList .item .desc {
+  width: 130px;
+  padding-top: 11px;
+  display: inline-block;
+  border-top: 1px solid #ddd;
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.x-w1090 {
+  width: 1012px;
+  padding: 37px 40px 40px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+.x-w1090 .item {
+  width: 245px;
+  margin-bottom: 40px;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after, .clearfix::before {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*# sourceMappingURL=category.css.map */
